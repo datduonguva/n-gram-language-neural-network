@@ -1,9 +1,9 @@
 import numpy as np
-wew = np.genfromtxt('wew.csv', delimiter=', ')
-ethw = np.genfromtxt('ethw.csv', delimiter = ', ')
-htow = np.genfromtxt('htow.csv', delimiter = ', ')
-hb = np.genfromtxt('hb.csv', delimiter = ', ')
-ob = np.genfromtxt('ob.csv', delimiter = ', ')
+wew = np.genfromtxt('word_embedding_weights.csv', delimiter=', ')
+ethw = np.genfromtxt('embed_to_hid_weights.csv', delimiter = ', ')
+htow = np.genfromtxt('hid_to_output_weights.csv', delimiter = ', ')
+hb = np.genfromtxt('hidden_bias.csv', delimiter = ', ')
+ob = np.genfromtxt('output_bias.csv', delimiter = ', ')
 vocab = []
 with open('vocab.csv', 'r') as f:
 	for line in f.readlines():
